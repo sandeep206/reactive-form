@@ -1,0 +1,50 @@
+$error: red;
+$success: green;
+$border-color: black;
+
+.form {
+    margin: 0 auto;
+    font-size: 1rem;
+    border: 1px solid $border-color;
+    max-height: 40rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+
+    .form__title {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .form__field {
+        display: flex;
+        flex-direction: column;
+        max-width: 30rem;
+        padding: 1rem;
+    }
+
+    .field--error {
+        color: $error;
+        font-size: 0.8rem;
+
+        p {
+            margin: 0.12rem;
+        }
+    }
+
+    .field--success {
+        color: $success;
+    }
+
+    abbr {
+        text-decoration: none;
+    }
+
+    .submit__btn {
+        width: 10rem;
+        padding: 0.25rem;
+        margin: 0.5rem;
+        text-align: center;
+        align-self: flex-end;
+    }
+}
